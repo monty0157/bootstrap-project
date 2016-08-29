@@ -1,0 +1,36 @@
+@import "{}/node_modules/sass-mq/_mq.scss";
+
+$side_menu_width: 8rem
+$nav_bar_height: 5rem
+
+.main-div
+  display: flex
+  flex-direction: row-reverse
+  position: absolute
+  width: 100%
+
+  #side-menu
+    max-width: $side_menu_width !important
+    width: 100% !important
+    height: 100rem
+    left: 0 !important
+    position: relative
+    margin-top: 5.1rem
+
+
+  #jumbotron
+    margin: calc(#{$nav_bar_height}*2) 74rem 74rem $nav_bar_height !important
+    top: 0
+    width: 100%
+    +mq($until: tablet)
+      margin-right: calc(#{$nav_bar_height}) !important
+
+#nav-bar
+  display: flex
+  border: none
+  top: 0
+  left: 0px
+  max-height: $nav_bar_height
+  position: absolute
+  width: 100%
+  box-shadow: 0 0.2rem #282A37 !important

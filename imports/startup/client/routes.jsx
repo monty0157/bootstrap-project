@@ -3,10 +3,12 @@ import { Router, Route, browserHistory } from 'react-router';
 
 import App from '../../ui/layouts/App';
 
-export const renderRoutes = () => (
+const AppRoutes = () => (
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <Route path='site' />
     </Route>
   </Router>
 );
+
+export default AppRoutes;
